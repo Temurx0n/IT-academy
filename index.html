@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body id="body" style="overflow: auto;">
+    <div class="container">
+        <header class="header">
+            <img src="https://www.ishtixonit.uz/static/media/logo.3499c77696957a3c8ac3.png" alt="logo"
+                class="header_logo">
+            <ul class="header_text">
+                <li class="header_text text1">Biz haqimizda </li>
+                <li class="header_text text1">Loyhalarimiz</li>
+                <li class="header_text text1">Bizning Kurslar</li>
+                <li class="header_text text1">Kontakt</li>
+            </ul>
+
+            <label class="switch">
+                <input type="checkbox" id="toggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="header_pl">
+                <a href="tel:+998 93 346-94-98" class="pl_a">+998 93 346-94-98</a><br>
+                <a href="https://www.google.com/intl/ru/gmail/about/" class="pl_a">otabektatusf@gmail.com</a>
+            </div>
+            <a href="#registr"><button class="header_btn">Ro'yxatdan o'tish</button></a>
+        </header>
+        <section class="box1">
+            <div class="box1_word">
+                <h1 class="box1_h">
+                    Biz bilan kelajak kasblarini egallang.
+                </h1>
+                <p class="box1_p">Siz doimo olg'a intilishda bo'lishingiz uchun qulay o'quv muhitini yaratdik.
+                    O'rganing, mashq qiling va bilimlarni darhol ishingizda qo'llang.</p>
+            </div>
+            <img src="https://www.ishtixonit.uz/static/media/hero.bd887bb30c5daad315bb.jpg" alt="" class="box1_img">
+        </section>
+        <section class="about">
+            <div class="about_right">
+                <h2 class="about_h">
+                    Kompaniya haqida
+                </h2>
+                <p class="about_p">Agentlik-bu mijozlarga o'z bizneslari uchun sifatli va innovatsion echimlarni taqdim
+                    etish maqsadida tashkil etilgan veb-agentlik. Bizning jamoamiz mijozlarga moslashtirilgan va sifatli
+                    mahsulotni taklif qilish uchun yaqin hamkorlikda ishlaydigan tajribali veb-dizayn, ishlab chiqish va
+                    marketing mutaxassislaridan iborat.</p><br>
+                <p class="about_p">Biz veb-dizayn, veb-sayt va mobil ilovalarni ishlab chiqish, SEO optimallashtirish,
+                    kontent yaratish va reklama kampaniyalarini o'z ichiga olgan keng ko'lamli xizmatlarni taklif
+                    etamiz.
+                    Biz eng yangi texnologiyalar va innovatsion usullardan foydalangan holda brendni rivojlantirish va
+                    sotishni ko'paytirish bilan shug'ullanamiz.</p>
+            </div>
+            <div class="about_left">
+                <div class="a1">
+                    <div class="cart">
+                        <h1 class="cart_h">2+</h1>
+                        <p class="cart_p">Проектов запустил</p>
+                    </div>
+                    <div class="cart">
+                        <h1 class="cart_h">2 года</h1>
+                        <p class="cart_p">Опыта разработки</p>
+                    </div>
+                </div>
+                <div class="a2">
+                    <div class="cart">
+                        <h1 class="cart_h">2+</h1>
+                        <p class="cart_p">Профессионалов</p>
+                    </div>
+                    <div class="cart">
+                        <h1 class="cart_h">2 года</h1>
+                        <p class="cart_p">Опыта разработки</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="box2">
+            <h1 class="box2_h">Bizning afzalliklarimiz</h1>
+            <div class="card_group">
+                <div class="card1">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="card_img">
+                    <h2 class="card_h">Individual yondashuv</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        echimlarni yaratamiz</p>
+                </div>
+                <div class="card1">
+                    <img src="data:image/png;base64,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 "
+                        alt="" class="card_img">
+                    <h2 class="card_h">Ekspertiza</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        echimlarni yaratamiz</p>
+                </div>
+                <div class="card1">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="card_img">
+                    <h2 class="card_h">Professional xizmat</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        echimlarni yaratamiz</p>
+                </div>
+            </div>
+            <div class="card_group1">
+                <div class="card1">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="card_img">
+                    <h2 class="card_h">Individual yondashuv</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        echimlarni yaratamiz</p>
+                </div>
+                <div class="card1">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAaJSURBVHgB7VvdUttGFD4rA8l0pozCC0R5A/IEhTcIATLTq5CLdAw3JU+AeYLADTDtBeaq01Bi+gSQJyA8QdwXwGpnOgMt3u05km0k+exqtTativzNJGNrVyvr6Px8+x0BMMEEE0wwwQT/Fjb9Q9807kEFUfd/Cm7E12d1/8Oabk4lDSNguoH/zwtRO1z3T95z3iOgYiAvIYNkDreV+mvxIPy23T9QKY+hEEKjbDFDePzRWfJApQwThxAE3JhSajs9tyJ467fmp4S84MaUgObB1fKb5LEpqAjQKC1+RLRBiu3s0UqEUn2uRXkl4MYohA7CpXb2+IMPpTjhznzhxgSoz3udlefcWAU8ZvpQNyJVbUk39qANE3MWscCNCSXZEBqMQwlB7v8YrsOd8E0IjuiFEHGTYHhUtPc7L5+Zzi9lVSK+cQMzHfz4Dhxh4iy36nYp7/zShVK0sRPiNd7ZZt0/XgAHDNZgQJzlx/DV57w1SmUY2swlKbsQ3mGePJC3RhrEWbxtm3VKZZhrz/8e0u4f3MDsFhRAb37Ajek4C4fSJF8T31BK4s539XykNRjab0JpPKZXQTRjdiGlX0OEtiHURykM01PSAsOU3JAy0X4kLdYhNDgF/mOY+UYaupDqrUE7Z8ar8jkLh7F4zLr/8wtwhIlvDM3VhFRvDTbUlBKL4ICRDRNzhqkWaadQEKSR6PiGBkMhZeIsebTfhJENM+AMSMi+8483i5xr0kgECJ6EJYifQaqM1tgLVxvgiJEMk014NeG9tw2rPI1EKrEUVZM7XOLxI8wzieoyFeD3IwXq14i8pRb523k7QXBOvgbOEN6q7qKJdttqJHX/ZE1i7vgKvOZOuJS7oaz7rcDz5Bp93rtabsAIcDbM+pMTurFAMzzUjkid6//S1O5llPfMNS+ME06hZMM7PDHd4irIfSXLcaOwxxThHYjT/c7yYItPhroRsxfgqJHc/YZWgOJBEH+bat+HMQvrMUV4B+IFlfH9cDlKhLRJRK9gz832dZIgg17DLG4w1UKsyGHmGTi7pLAO8XzMafLoMfx5OorA1Uchj9G0N3PRVfKdB7enRTd4fYMILNGgIXAM2ni93R/C1R0YAYUMo0+4oq2EOhIKTPsZeoocZcenLZ5nw+Gt/wEbZLUW2HtnFsYCkAfr5Jvbm8HyiE/WtINln7hQ3d2sUdb9j6/RKLZ5TIcoF1JOBAdYeYxR50ByddBZGZC69TksxcqW5g8n3J6nXMD44OQ5Vh5j0kpA1VLbgP2rlTUtnc8gK0rTA+iFj+nXUEh+ilmwOqLP5vnoOYbekg65VcnEWYh3YMVpZ4/P4I72RgA+dRXo1o1E6U6aHQuYyUqbydFQCLU7I8XOTvgyTP/GViC8bkPrqVjJ6D4OwldNsIQxlEbpzUQ/VigyDquRkByQzC2mcOXm89c8xnJOHsddE/D3LlvrMsZQGqU3QzehVJedw4vStQV+pahqLdqQOBKxdNdEBEXaMVrDjKM3E6ltKt00o03iQbjcHJospjRhUEyWjK4potzDLWYtqGkNM47eDAFz0E6yjOsa6WiwBe74I/lHEwpCSdVkryG8b8ASrGFc3icxIZIAIgLIbxI3sESzJyr5yYXex7qwYM7TF4MshqpSlASVbHCTI84SrjTBAY9kTavuSRC+YK/nfQFnyN/RONkkbN3VHDJMEc5SBCahyQMVKhgv0NAdXPMpOCIVSnmc5b60EgnTrNFwJz0PjlDAnmsdll76h2gqw4jCch5ig7M5Yb5oU5+gLctKXoIlUoZBvkBb/9PsJJv3ScYAtvwXbeoTcEvCtnKU5VaFkDIMPTlS3JLl1ZazjIquIqWfQcH3ZKKKqg3BmrVGw5ZrKq8kSgNt0Ao2w11BnQA+nCL+0bJpy5BRdBWVSn+RHOncJbgP1OdOGiaxSyloknyZ7V/HHiW2dC8ixucW6z6UyjCEjScfL5Av5VUj9CzV7vGU/j8j0KgN3IpYe3/p3sHrdSDbOdN8iMtxAJakDfNmAxt41om8dB5D6EkWZ0UovC1sPaeUL0DHkgW9viHOYcyw9ZxSekwS1L/GpLpVwHtQ9pQN4Yk1k/aMBmruGd7JK71h+ojUufhmMbeIp3cqHZV4dYk3ei6lPE9WrDxh3mSc/41hXOFqnAdvGIKLcSphGEJR41Tmj0Wp36XXghFS/pb8WhmP6YPzHNKasrJK5QxDSBqHM0qlQcbZ8I8bMMEEE9wn/gFUQyTzpG6EIwAAAABJRU5ErkJggg== "
+                        alt="" class="card_img">
+                    <h2 class="card_h">Ekspertiza</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        echimlarni yaratamiz</p>
+                </div>
+                <div class="card1">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="card_img">
+                    <h2 class="card_h">Professional xizmat</h2>
+                    <p class="card_chiziq"></p>
+                    <p class="card_p">Biz har bir mijozga g'amxo'rlik qilamiz va ularning ehtiyojlariga javob beradigan
+                        yechimlarni yaratamiz</p>
+                </div>
+            </div>
+        </section>
+        <section class="box3">
+            <h1 class="box3_h">Bajargan loyihalarimiz</h1><br><br>
+            <div class="images_group">
+                <div class="box3_hover">
+                    <img src="data:image/png;base64,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"
+                        alt="" class="box3_img">
+                    <a href="#">
+                        <div class="img_hover">
+                            <h3 class="hover_h">TEXNOMART clone</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="box3_hover">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFAiYdR6nm7111dmJC3Oto7pd7afgzEAkTQ&usqp=CAU"
+                        alt="" class="box3_img">
+                    <a href="#">
+                        <div class="img_hover">
+                            <h3 class="hover_h">TEXNOMART clone</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="box3_hover">
+                    <img src="./assets/images/projects_images3.95840f5fc919b9e02e95.png" alt="" class="box3_img">
+
+                    <a href="#">
+                        <div class="img_hover">
+                            <h3 class="hover_h">TEXNOMART clone</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="box4">
+            <h1 class="box4_h">Bizning kurslar</h1>
+            <div class="box4_box">
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">Kompyuter savodxonligi</p>
+                    <p class="box_p2">Kompyuterni endi boshlayotganlar uchun.<br>Kursimiz davomiyligi 6 oy.</p>
+                </div>
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">Frontend dasturlash</p>
+                    <p class="box_p2">Kursimiz davomiyligi 6 oy.</p>
+                </div>
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">Backend dasturlash</p>
+                    <p class="box_p2">Kursimiz davomiyligi 6 oy.</p>
+                </div>
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">SMM </p>
+                    <p class="box_p2">Beznesingizni rivojlantirish uchun 1-qadam<br>Kursimiz davomiyligi 2 oy.</p>
+                </div>
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">Grafik dizayn</p>
+                    <p class="box_p2">Biz fotografiya xizmatlarini taqdim etamiz <br>Kursimiz davomiyligi 4 oy.</p>
+                </div>
+                <div class="box_items">
+                    <img class="box_images"
+                        src="data:image/png;base64,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"
+                        alt="images">
+                    <p class="box_p">Motion dizayn</p>
+                    <p class="box_p2">Bizdan eng yaxshi va eng zo'r sifatga ega platforma yarating.<br> Kursimiz
+                        davomiyligi 6 oy..</p>
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="team_container">
+                <h2 class="team_title">Bizning jamoa</h2>
+                <div class="team_content">
+                    <div class="team_content_box"><img class="team_box_images"
+                            src="https://www.ishtixonit.uz/static/media/team1.536af3bad145386c0792.png"
+                            alt="person_images">
+                        <div class="team_box_text_group">
+                            <p class="team_person_name">Otabek Hasanov</p>
+                            <p class="team_person_line"></p>
+                            <p class="team_person_work">IT Academy asoschisi</p>
+                        </div>
+                    </div>
+                    <div class="team_content_box"><img class="team_box_images"
+                            src="https://www.ishtixonit.uz/static/media/team3.2d6312476b455a485f27.png"
+                            alt="person_images">
+                        <div class="team_box_text_group">
+                            <p class="team_person_name">Bobur Nematulayev</p>
+                            <p class="team_person_line"></p>
+                            <p class="team_person_work">Frontend dasturchi</p>
+                        </div>
+                    </div>
+                    <div class="team_content_box"><img class="team_box_images"
+                            src="https://www.ishtixonit.uz/static/media/team4.057667c1dc49a7473a0a.png"
+                            alt="person_images">
+                        <div class="team_box_text_group">
+                            <p class="team_person_name">Shakhruz Ismoilov</p>
+                            <p class="team_person_line"></p>
+                            <p class="team_person_work">Fullstack dasturchi</p>
+                        </div>
+                    </div>
+                    <div class="team_content_box"><img class="team_box_images"
+                            src="https://www.ishtixonit.uz/static/media/team2.a98ff9a5a02cc741bf01.png"
+                            alt="person_images">
+                        <div class="team_box_text_group">
+                            <p class="team_person_name">Akmal Xudoyberdiyev</p>
+                            <p class="team_person_line"></p>
+                            <p class="team_person_work">SMM designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="registr" class="registr">
+            <div class="registr_container">
+                <div class="registr_content">
+                    <form class="registr_form"><input class="registr_input" type="text" placeholder="Ismingiz"
+                            required="" maxlength="20" minlength="3" name="ism" wfd-id="id0">
+                        <input class="registr_input" type="email" placeholder="Email manzilingiz" required=""
+                            maxlength="40" minlength="10" name="email" wfd-id="id1">
+                        <input class="registr_input" type="tel" placeholder="Telefon raqamangiz" required=""
+                            maxlength="9" minlength="9" name="tel" wfd-id="id2">
+                        <button class="registr_form_btn" type="submit">Ro'yhatdan
+                            o'tish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="footer">
+            <footer class="footer_container">
+                <div class="footer_content"><img class="header_logo_content_images"
+                        src="https://www.ishtixonit.uz/static/media/logo.3499c77696957a3c8ac3.png" alt="logo">
+                    <div class="footer_location"><a class="footer_location_link"
+                            href="https://yandex.uz/maps/org/ishtixon_tuman_davlat_soliq_inspeksiyasi/191064047247/?utm_medium=mapframe&amp;utm_source=maps">
+                            <div class="footer_location_content footer_link_kun"><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 1024 1024" class="footer_link fot_icons" height="1em"
+                                    width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M515.664-.368C305.76-.368 128 178.4 128 390.176c0 221.76 206.032 448.544 344.624 607.936.528.64 22.929 25.52 50.528 25.52h2.449c27.6 0 49.84-24.88 50.399-25.52 130.064-149.52 320-396.048 320-607.936C896 178.4 757.344-.368 515.664-.368zm12.832 955.552c-1.12 1.12-2.753 2.369-4.193 3.409-1.472-1.008-3.072-2.288-4.255-3.408l-16.737-19.248C371.92 785.2 192 578.785 192 390.176c0-177.008 148.224-326.56 323.664-326.56 218.528 0 316.336 164 316.336 326.56 0 143.184-102.128 333.296-303.504 565.008zm-15.377-761.776c-106.032 0-192 85.968-192 192s85.968 192 192 192 192-85.968 192-192-85.968-192-192-192zm0 320c-70.576 0-129.473-58.816-129.473-129.408 0-70.576 57.424-128 128-128 70.624 0 128 57.424 128 128 .032 70.592-55.903 129.408-126.527 129.408z">
+                                    </path>
+                                </svg>
+                                <p class="footer_link ">Manzil: Ishtixon tumani, Soliq binosi 2-qavat<br>Mo'ljal: Soliq
+                                    binosi</p>
+                            </div>
+                        </a></div>
+                    <div class="footer_phone_content">
+                        <p><a class="footer_link phone" href="tel:+998933469498"><svg stroke="currentColor"
+                                    fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="fot_icons"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                    </path>
+                                </svg>+998 93 346-94-98</a></p>
+                        <p><a class="footer_link phone" href="tel:+998933469498"><svg stroke="currentColor"
+                                    fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="fot_icons"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                                    </path>
+                                </svg>+998 93 346-94-98</a></p>
+                    </div>
+                    <div class="footer_icons_content"><a href="https://t.me/otabekcoding"
+                            class="footer_social_link"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 256 256" class="fot_icons" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M239.49,23.16a13,13,0,0,0-13.23-2.26L23.6,100.21a18.22,18.22,0,0,0,3.12,34.86L76,144.74V200a20,20,0,0,0,34.4,13.88l22.67-23.51L170.35,223a20,20,0,0,0,32.7-10.54L243.67,35.91A13,13,0,0,0,239.49,23.16ZM147.41,77.52,85.22,122.09l-34.43-6.75ZM100,190.06V161.35l15,13.15Zm81.16,10.52-73.88-64.77L213.59,59.63Z">
+                                </path>
+                            </svg></a><a href="https://www.youtube.com/@ishtixonitacademy"
+                            class="footer_social_link"><svg stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="fot_icons"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                                </path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg></a><a href="https://instagram.com/ishtixon_it_academy?igshid=OGQ5ZDc2ODk2ZA=="
+                            class="footer_social_link"><svg stroke="currentColor" fill="none" stroke-width="2"
+                                viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="fot_icons"
+                                height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg></a></div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
